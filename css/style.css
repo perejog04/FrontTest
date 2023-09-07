@@ -1,0 +1,206 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+    color: white;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/* HEADER */
+header {
+    background-color: #2b7ded;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo img {
+    display: block;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav-link {
+    margin-left: 1.5rem;
+    color: #fff;
+    transition: color .2s linear;
+}
+
+.header-nav-link:hover {
+    color: #1d539e;
+}
+
+.header-nav-link.active::after {
+    content: "";
+    background-color: #fff;
+
+    width: 100%;
+    height: 2px;
+
+    bottom: 0px;
+    left: 1px;
+
+    position: absolute;
+}
+
+
+/* CONTENT */
+
+.page {
+    width: 100%;
+    height: 100vh;
+
+    background: #000
+    url("../img/bg.jpg") center
+    no-repeat;
+    background-size: cover;
+}
+main .container {
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 24px 0 20px;
+    max-width: 1000px;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+header a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.active {
+    position: relative;
+}
+
+.blue {
+    color: #2b7ded;
+}
+
+.my-name {
+    font-size: 21px;
+    font-weight: 300;
+    color: rgb(63, 63, 63);
+
+    margin: 110px 0 0 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+
+    margin: 10px 0 0 0;
+}
+
+.about-me {
+    font-size: 1rem;
+    font-weight: 400;
+
+    margin: 60px 0 0 0;
+    max-width: 555px;
+}
+
+.button-contact {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    width: 160px;
+    height: 40px;
+
+    color: #fff;
+    background-color: #2b7ded;
+    border-radius: 5px;
+
+    border: none;
+
+    margin: 55px 0 0 0;
+    transition: box-shadow .2s linear;
+    transition: background-color .1s linear;
+}
+
+.button-contact:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button-contact:active {
+    background-color: #0d2341;
+}
+
+/* FOOTER */
+
+footer {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+footer .container {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    max-width: 450px;
+}
+
+.mail {
+    font-size: 1rem;
+    font-weight: 500;
+
+    color: #fff;
+    text-decoration: none;
+
+    margin-right: 21px;
+}
+
+.phone {
+    font-size: 1rem;
+    font-weight: 500;
+
+    color: #fff;
+    text-decoration: none;
+    margin-right: 21px;
+    position: relative;
+}
+
+.phone::after {
+    content: "";
+    background-color: #fff;
+
+    width: 82px;
+    height: 2px;
+
+    bottom: 9px;
+    left: 134px;
+
+    position: absolute;
+}
