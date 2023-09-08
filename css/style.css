@@ -263,8 +263,6 @@ footer .container {
 
 .input-item::placeholder {
     font-family: 'Monstserrat' sans-serif;
-    padding-left: 16px;
-    padding-top: 1rem;
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
@@ -278,6 +276,8 @@ input {
 
     width: 280px;
     height: 40px;
+
+    padding-left: 16px;
 
     border: none;
     border-radius: 5px;
@@ -293,6 +293,9 @@ textarea {
 
     width: 280px;
     min-height: 100px;
+
+    padding-left: 16px;
+    padding-top: 1rem;
 
     border: none;
     border-radius: 5px;
